@@ -30,7 +30,7 @@ Handle<Value> Generate( const Arguments &args ) {
   encoding encode = ASCII;
   char unparsed[40];
 
-  if (args.Length() > 0 && args[0]->IsString()) {
+  if (args.Length() > 0) {
     encode = ParseEncoding(args[0], encode);
   }
 
